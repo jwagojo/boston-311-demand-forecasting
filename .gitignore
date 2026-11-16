@@ -1,0 +1,5 @@
+.env
+.cursor
+.venv
+data/raw/*.csv
+.DS_Store
