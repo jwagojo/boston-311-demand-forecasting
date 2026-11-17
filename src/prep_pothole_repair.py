@@ -7,10 +7,10 @@ from zipfile import ZipFile
 
 case_types = {
     "Request for Pothole Repair",
-    "Pothole",
     "BWSC Pothole",
     "Pothole Repair (Internal)",
 }
+
 excluded_columns = {
     "case_enquiry_id",
     "sla_target_dt",
@@ -20,10 +20,8 @@ excluded_columns = {
     "case_title",
     "subject",
     "reason",
-    "type",
     "submitted_photo",
     "closed_photo",
-    "source",
 }
 
 data_folder = Path(__file__).resolve().parent.parent / "data"

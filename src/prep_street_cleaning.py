@@ -5,7 +5,7 @@ from pathlib import Path
 from zipfile import ZipFile
 
 
-case_types = {"Requests for Street Cleaning", "Street Cleaning", "Request for Street Cleaning"}
+case_types = {"Requests for Street Cleaning"}
 excluded_columns = {
     "case_enquiry_id",
     "sla_target_dt",
@@ -15,11 +15,10 @@ excluded_columns = {
     "case_title",
     "subject",
     "reason",
-    "type",
     "submitted_photo",
     "closed_photo",
-    "source",
 }
+
 data_folder = Path(__file__).resolve().parent.parent / "data"
 archives = sorted(data_folder.glob("*.zip"))
 if not archives:
